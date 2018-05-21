@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Job (#{{ vm.job.id }})
+    </div>
+    <div class="panel-body">
+        <dl class="dl-horizontal">
+            <dt>Description</dt>
+            <dd>{{ vm.job.description }}</dd>
+        </dl>
+
+        <dl class="dl-horizontal">
+            <dt>Status</dt>
+            <dd>{{ (vm.job.status == 0) ? 'Open' : (vm.job.status == 1) ? 'Closed' : 'In Progress' }}</dd>
+        </dl>
+    </div>
+</div>
